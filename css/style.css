@@ -600,6 +600,9 @@ footer{
 /*|----------------------|*/
 
 @media screen and (max-width: 768px){
+  .contact-icons a{
+	font-size: 40px;
+  }
 
   .cards-container{
     margin-top: 4vh;
