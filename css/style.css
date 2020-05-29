@@ -711,7 +711,7 @@ footer{
 }
 
 @media (max-width: 650px) {
-
+  
   main .responsive-yt-video-grid{
   width: 240px;
   height: 135px;
@@ -736,6 +736,12 @@ footer{
 
 }
 @media (max-width: 500px) {
+  .contact-icons{
+    margin:0px 8px;
+  }
+  .contact-icons a{
+	font-size: 30px;
+  }
 
   li .navcont  {
     font-size: 10px;
