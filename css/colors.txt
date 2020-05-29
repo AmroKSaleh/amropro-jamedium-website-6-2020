@@ -1,0 +1,12 @@
+colors:
+
+/*------------------------------*/
+/* | #C1282D    deep red       |*/
+/* | #660003    dark red       |*/
+/* | #C7DFE5    wightish       |*/
+/* | #022424    dark jreen     |*/
+/* | #0A4D4D    jreen          |*/
+/* | #4a9e9e    light-jreen    |*/
+/* | #EE3C25    awesome orange |*/
+/* | #242424    24 gray        |*/
+/*------------------------------*/
