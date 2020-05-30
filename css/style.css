@@ -8,7 +8,15 @@
 /* | #EE3C25    awesome orange |*/
 /* | #242424    24 gray        |*/
 /*------------------------------*/
+::-moz-selection { /* Code for Firefox */
+  color: #022424;
+  background: #C7DFE5;
+}
 
+::selection {
+  color: #022424;
+  background:#C7DFE5;
+}
 .card-image{
   width: 100%;
   border-radius:40px 40px 0px 0px;
