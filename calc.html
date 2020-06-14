@@ -60,37 +60,95 @@ theme_color="#0A4D4D">
     </header>
     <noscript class="">لن تعمل الالة الحاسبة بسبب عدم دعم المتصفح الذي تستعمله للجافا سكريبت.</noscript>
     <main class="content">
-      <div class="mobile-text-calc">
-        <p class="big-title">قسم المقاومات:</p>
-        <p class="medium-title">حساب التوازي:</p>
-        <p class="medium-title">عدد المقاومات:</p>
-      </div>
-      <div class="par-res">
-        <div class="input-holder">
-          <input type="text" id="resNum"></input>
-          <button onclick="addLoop()">اضف مقاومات</button>
+
+      <div class="tabContainer">
+        <p class="medium-title">قسم المقاومات</p>
+        <div class="buttonContainer">
+            <button onclick="showPanel(0,'#660003')">توالي</button>
+            <button onclick="showPanel(1,'#660003')">توازي</button>
+            <button onclick="showPanel(2,'#660003')">مقسمات الجهد</button>
         </div>
-        <div id="b">
-        </div>  
+
+        <div class="tabPanel">
+          <div class="par-res">
+            <div class="input-holder">
+              <input type="text" id="resSerNum"></input>
+              <button onclick="AddResSer()" class="calc-button">اضف مقاومات</button>
+            </div>
+            <div id="res-ser-inputs">
+            </div>  
+          </div>
+          <p class="medium-title" id="resSerOut"></p>
+        </div>
+       
+        <div class="tabPanel">
+          <div class="par-res">
+            <div class="input-holder">
+              <input type="text" id="resParNum"></input>
+              <button onclick="AddResPar()" class="calc-button">اضف مقاومات</button>
+            </div>
+            <div id="res-par-inputs">
+            </div>  
+          </div>
+          <p class="medium-title" id="resParOut"></p>
+        </div>
+
+        <div class="tabPanel">
+          <p class="small-title">قريبًا...</p>
+        </div>
+
+    </div>
+
+    <div class="tabContainer">
+      <p class="medium-title">قسم المكثفات</p>
+      <div class="buttonContainer">
+          <button onclick="showPanel(3,'#660003')">توالي</button>
+          <button onclick="showPanel(4,'#660003')">توازي</button>
+          <button onclick="showPanel(5,'#660003')">فلاتر الترددات</button>
       </div>
-      <p class="medium-title" id="out"></p>
+
+      <div class="tabPanel">
+        <div class="par-res">
+          <div class="input-holder">
+            <input type="text" id="capSerNum"></input>
+            <button onclick="AddCapSer()" class="calc-button">اضف مكثفات</button>
+          </div>
+          <div id="cap-ser-inputs">
+          </div>  
+        </div>
+        <p class="medium-title" id="capSerOut"></p>
+      </div>
+
+      <div class="tabPanel">
+        <div class="par-res">
+          <div class="input-holder">
+            <input type="text" id="capParNum"></input>
+            <button onclick="AddCapPar()" class="calc-button">اضف مكثفات</button>
+          </div>
+          <div id="cap-par-inputs">
+          </div>  
+        </div>
+        <p class="medium-title" id="capParOut"></p>
+      </div>
+
+      <div class="tabPanel">
+        <p class="small-title">قريبًا...</p>
+      </div>
+
     </main>
+
+
     <footer class="footer-distributed">
       <div class="footer-left">
+  		  <p class="footer-company-about" dir="rtl">
+  		  <span>من نحن</span>نحن فريق يعمل من أجل تزويد المحتوى العلمي العربي بمحتوى علمي ممتع عالي الجودة وبلغتهم العربية لتحفيز الشباب على التعلم وتطوير مهاراتهم واكتساب الخبرات ومتطلبات سوق العمل.</p>
 
-  		<p class="footer-company-about" dir="rtl">
-  		<span>من نحن</span>نحن فريق يعمل من أجل تزويد المحتوى العلمي العربي بمحتوى علمي ممتع عالي الجودة وبلغتهم العربية لتحفيز الشباب على التعلم وتطوير مهاراتهم واكتساب الخبرات ومتطلبات سوق العمل.</p>
-
-  		<div class="footer-icons">
-
-  		<a href="https://www.facebook.com/Jamedium"><i class="fa fa-facebook"></i></a>
-  		<a href="https://www.youtube.com/channel/UCOY9FofqBEnOayDVWwhH9ig"><i class="fa fa-youtube"></i></a>
-
-  		</div>
-
-  		</div>
-
-
+  		  <div class="footer-icons">
+          <a href="https://www.facebook.com/Jamedium"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.youtube.com/channel/UCOY9FofqBEnOayDVWwhH9ig"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+      
 		<div class="footer-center">
     <div class="footer-middle">
 		<div>
