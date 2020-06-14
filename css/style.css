@@ -8,6 +8,41 @@
 /* | #EE3C25    awesome orange |*/
 /* | #242424    24 gray        |*/
 /*------------------------------*/
+
+.tabContainer{
+  width: 100%;
+}
+.tabContainer .buttonContainer{
+  height: 8%;
+}
+.tabContainer .buttonContainer button{
+  width: 33.3333%;
+  height: 100%;
+  float: left;
+  border: none;
+  outline:none;
+  cursor: pointer;
+  color: #C7DFE5;
+  background-color: #0A4D4D;
+}
+.tabContainer .buttonContainer button:hover{
+  background-color: #4a9e9e;
+  color: #022424;
+}
+.tabContainer .tabPanel{
+
+  background-color: #4a9e9e;
+  color: #C7DFE5;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 22px;
+  display: none;
+}
+
+
 ::-moz-selection { /* Code for Firefox */
   color: #022424;
   background: #C7DFE5;
@@ -20,6 +55,9 @@
 .card-image{
   width: 100%;
   border-radius:40px 40px 0px 0px;
+}
+*{
+  font-family: "Tajawal", sans-serif;
 }
 
 html {
@@ -95,6 +133,17 @@ li a:hover {
   background-color: #C7DFE5;
 }
 
+.small-title{
+  text-align: center;
+  padding: 0.5vw 1vw;
+  direction: rtl;
+  text-decoration: none;
+  font-family: "Tajawal", sans-serif;
+  font-size: 18px;
+  color: #C7DFE5;
+  transition-duration: 0.4s;
+}
+
 .medium-title{
   text-align: center;
   padding: 1vw 2vw;
@@ -119,9 +168,89 @@ li a:hover {
 .center-content{
    display:flex;
    flex-direction:column;
-   justify-content:center;
+   align-items:center;
+   justify-content: center;
+
+}
+.sign-in-card{
+  background-color: #0A4d4d;
+  width: 70%;
+  border-radius: 50px;
+  margin-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+main .action-button{
+  color: #C7DFE5;
+  text-align: center;
+  padding: 0.5vw 2vw;
+  padding-bottom: 2vw;
+  text-decoration: none;
+  font-family: "Tajawal", sans-serif;
+  background-color: #4a9e9e;
+  font-size: 40px;
+  border-radius: 100px;
+  margin: 30px;
+  float: right;
+  width: 80%;
+  transition: 0.4s;
 }
 
+main .action-button:hover{
+  color: #EE3C25;
+  font-size: 45px;
+}
+
+main  .sign-input{
+  direction: rtl;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Tajawal", sans-serif;
+  outline: none;
+  background-color: #C7DFE5;
+  color: #022424;
+  border: none;
+  padding: 10px;
+  transition: 0.4s ease-in-out;
+  width: 70%;
+  height: 100%;
+  margin: 10px;
+  border-radius: 6px;
+  min-width: 40px;
+}
+
+main .sign-input:focus{
+  border-bottom: 9px solid #C1282D;
+}
+
+main  .sign-input:hover{
+  background-color: #022424;
+  color: #C7DFE5;
+  border-bottom: 3px solid #C1282D;
+}
+
+main .sign-button{
+  display: inline-block;
+  border: none;
+  outline: none;
+  background-color: #C7DFE5;
+  color: #022424;
+  direction: rtl;
+  text-decoration: none;
+  font-family: "Tajawal", sans-serif;
+  margin: 10px;
+  padding: 10px;
+  width: 70%;
+  height: 100%;
+  transition: 0.4s ease-in-out;
+  border-radius: 6px;
+}
+
+main .sign-button:hover{
+  border: 5px solid #C1282D;
+  background-color: #C7DFE5;
+  color: #022424;
+}
 .cards-container{
   margin-top: 4vh;
   display: flex;
@@ -245,7 +374,7 @@ main .action-button:hover{
   font-size: 45px;
 }
 
-main input[type=text]{
+main input[type="text"]{
   direction: rtl;
   text-decoration: none;
   font-family: "Tajawal", sans-serif;
@@ -261,17 +390,17 @@ main input[type=text]{
   min-width: 40px;
 }
 
-main input[type=text]:focus{
+main input[type="text"]:focus{
   border-bottom: 9px solid #C1282D;
 }
 
-main input[type=text]:hover{
+main input[type="text"]:hover{
   background-color: #022424;
   color: #C7DFE5;
   border-bottom: 3px solid #C1282D;
 }
 
-main button{
+main .calc-button{
   display: inline-block;
   border: none;
   outline: none;
@@ -288,7 +417,7 @@ main button{
   border-radius: 6px;
 }
 
-main button:hover{
+main .calc-button:hover{
   border: 5px solid #C1282D;
   background-color: #C7DFE5;
   color: #022424;
@@ -323,8 +452,8 @@ main button:hover{
 #in71,#in72,#in73,#in74,#in75,#in76,#in77,#in78,#in79,#in80,
 #in81,#in82,#in83,#in84,#in85,#in86,#in87,#in88,#in89,#in90,
 #in91,#in92,#in93,#in94,#in95,#in96,#in97,#in98,#in99,#in100{
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 5;
+  margin-left: 5;
   width: auto;
 
 }
@@ -337,6 +466,25 @@ main button:hover{
   margin-right: auto;
   margin-left: auto;
   width: 90%;
+  display: inline-block;
+  border: none;
+  outline: none;
+  background-color: #C7DFE5;
+  color: #022424;
+  direction: rtl;
+  text-decoration: none;
+  font-family: "Tajawal", sans-serif;
+  margin: 10px;
+  padding: 10px;
+  width:10%;
+  height: 100%;
+  transition: 0.4s ease-in-out;
+  border-radius: 6px;
+}
+#calculate:hover{
+  border: 5px solid #C1282D;
+  background-color: #C7DFE5;
+  color: #022424;
 }
 
 #b{
@@ -522,6 +670,7 @@ footer{
 	cursor: pointer;
 	font-size: 30px;
   background:#4a9e9e;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 	text-align: center;
@@ -539,11 +688,12 @@ footer{
 	cursor: pointer;
 	font-size: 80px;
   background:#4a9e9e;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 	text-align: center;
 	line-height: 35px;
-	margin:0px 15px;
+	margin-right: 60px;
 }
 
 @media (max-width: 1263px) {
@@ -608,9 +758,6 @@ footer{
 /*|----------------------|*/
 
 @media screen and (max-width: 768px){
-  .contact-icons a{
-	font-size: 40px;
-  }
 
   .cards-container{
     margin-top: 4vh;
@@ -699,16 +846,6 @@ footer{
     opacity: 1;
   }
 
-  main button{
-    display: inline-block;
-    font-size: 12px;
-    margin: 10px;
-    padding: 10px;
-    width:22%;
-    height: 100%;
-    transition: 0.4s ease-in-out;
-    border-radius: 6px;
-  }
   .medium-title{
     text-align: center;
   }
@@ -719,7 +856,7 @@ footer{
 }
 
 @media (max-width: 650px) {
-  
+
   main .responsive-yt-video-grid{
   width: 240px;
   height: 135px;
@@ -744,12 +881,6 @@ footer{
 
 }
 @media (max-width: 500px) {
-  .contact-icons{
-    margin:0px 8px;
-  }
-  .contact-icons a{
-	font-size: 30px;
-  }
 
   li .navcont  {
     font-size: 10px;
